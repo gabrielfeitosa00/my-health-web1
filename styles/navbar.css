@@ -1,0 +1,39 @@
+.nav-bar{
+    background-color: #8FE1D9;
+    display: flex;
+    justify-content: space-between;
+    height:60px;
+    width: 100%;
+    border: red solid 1px;
+    align-items: center;
+
+}
+
+.nav-bar-logo-container {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    border: red solid 1px;
+}
+
+.nav-bar-logo-text {
+    color:#419ED7;
+    font-weight: 400;
+    font-size: 2rem;
+    align-self: center;
+}
+
+.nav-icon{
+    height:1.5rem;
+    width: 1.5rem;
+    border: red solid 1px;
+}
+
+.nav-bar-button{
+    background-color: #419ED7;
+    font-size: 1rem;
+    color: #ffffffff;
+    height: 75%;
+    margin: 10px;
+    border: none;
+}
