@@ -12,28 +12,34 @@
 .nav-bar-logo-container {
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 11px;
     border: red solid 1px;
 }
 
 .nav-bar-logo-text {
     color:#419ED7;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 2.1rem;
     align-self: center;
 }
 
 .nav-icon{
-    height:1.5rem;
-    width: 1.5rem;
+    height:2.1rem;
+    width: 2.1rem;
     border: red solid 1px;
 }
 
 .nav-bar-button{
     background-color: #419ED7;
-    font-size: 1rem;
+    font-size: 1.125rem;
     color: #ffffffff;
-    height: 75%;
     margin: 10px;
     border: none;
+    padding: 9px 16px;
+}
+
+.nav-bar-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
