@@ -29,14 +29,6 @@
     border: red solid 1px;
 }
 
-.nav-bar-button{
-    background-color: #419ED7;
-    font-size: 1.125rem;
-    color: #ffffffff;
-    margin: 10px;
-    border: none;
-    padding: 9px 16px;
-}
 
 .nav-bar-button-container{
     display: flex;

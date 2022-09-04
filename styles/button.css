@@ -1,0 +1,35 @@
+.neutral-button{
+    background-color: #419ED7;
+    font-size: 1.125rem;
+    color: #ffffffff;
+    margin: 10px;
+    border: 1px solid #419ED7;
+    padding: 9px 16px;
+}
+
+.confirm-button{
+    background-color: #49B976;
+    font-size: 1.125rem;
+    color: #ffffffff;
+    margin: 10px;
+    border: 1px solid #37BD6D;
+    padding: 9px 16px;
+}
+
+.cancel-button-1{
+    background-color: #FD7979;
+
+    font-size: 1.125rem;
+    color: #ffffffff;
+    margin: 10px;
+    border: none;
+    padding: 9px 16px;
+}
+.cancel-button-2{
+    background-color: #FF8383;
+    font-size: 1.125rem;
+    color: #ffffffff;
+    margin: 10px;
+    border: none;
+    padding: 9px 16px;
+}
