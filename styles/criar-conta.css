@@ -1,0 +1,45 @@
+.create-account-form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #add4d0;
+  height: 100vh;
+  align-items: center;
+width: 100%;
+}
+
+.create-account-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px purple solid;
+  width: 80%;
+  margin-top: 6.25rem;
+}
+.create-account-form div {
+  border: 1px green solid;
+  margin: 5px 0px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+.create-account-form label {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-right: 8px;
+}
+
+.create-account-form input {
+  color: #3f92c5;
+  border: none;
+  font-size: 1.3rem;
+}
+
+.create-account-form input [type="text"],
+[type="password"],
+[type="email"],[type="text"] {
+  width:30rem;
+}

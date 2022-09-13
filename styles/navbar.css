@@ -4,7 +4,16 @@
     justify-content: space-between;
     height:60px;
     width: 100%;
-    border: red solid 1px;
+    align-items: center;
+
+}
+
+.nav-bar-ligher{
+    background-color: #C1E7E3;
+    display: flex;
+    justify-content: space-between;
+    height:60px;
+    width: 100%;
     align-items: center;
 
 }
@@ -13,7 +22,7 @@
     display: flex;
     align-items: center;
     margin: 11px;
-    border: red solid 1px;
+
 }
 
 .nav-bar-logo-text {
@@ -26,7 +35,7 @@
 .nav-icon{
     height:2.1rem;
     width: 2.1rem;
-    border: red solid 1px;
+ 
 }
 
 

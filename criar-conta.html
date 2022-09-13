@@ -5,45 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Criar Conta</title>
-   
-    <link rel="stylesheet" href="/styles/index.css">
+
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="styles/button.css" />
+    <link rel="stylesheet" href="styles/criar-conta.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <img src="resources/icon-vaccine.png" class="nav-icon" alt="vaccine icon" />
-        <span>My Health</span>
+      <nav class="nav-bar-ligher">
+        <div class="nav-bar-logo-container">
+          <img
+            src="resources/icon-vaccine.png"
+            alt="vaccine icon"
+            class="nav-icon"
+          />
+          <span class="nav-bar-logo-text">My Health</span>
+        </div>
       </nav>
     </header>
-    <form action="/entrar.html">
-      <label for="">Nome completo:</label>
+    <div class="create-account-form-container">
+      <form action="/entrar.html" class="create-account-form">
+        <div>
+          <label for="">Nome completo</label>
+          <input type="text" />
+        </div>
 
-      <input type="text" />
-      <!-- TODO: Remove br tags  -->
-      <br />
-      <label for="">Sexo:</label>
-      <input type="radio" name="sexo" />
-      <label for="">Masculino</label>
-      <input type="radio" name="sexo" />
-      <label for="sexo">Feminino</label>
-      <br />
-      <label for="">Data Nascimento:</label>
-      <input type="date" />
-      <label for="">Email:</label>
+        <!-- TODO: Remove br tags  -->
+        <div>
+          <label for="">Sexo</label>
+          <input type="radio" name="sexo" />
+          <label for="">Masculino</label>
+          <input type="radio" name="sexo" />
+          <label for="sexo">Feminino</label>
+        </div>
 
-      <input type="email" />
-      <br />
+        <div>
+          <label for="">Data Nascimento</label>
+          <input type="date" />
+        </div>
 
-      <label for="">Senha:</label>
+        <div>
+          <label for="">E-mail</label>
+          <input type="email" />
+        </div>
 
-      <input type="password" />
-      <br />
+        <div>
+          <label for="">Senha</label>
+          <input type="password" />
+        </div>
 
-      <label for="">Repetir senha:</label>
+        <div>
+          <label for="">Repetir senha</label>
 
-      <input type="password" />
-      <br />
-      <input type="submit" value="Cadastrar" />
-    </form>
+          <input type="password" />
+        </div>
+
+        <button class="confirm-button">Cadastrar</button>
+      </form>
+    </div>
   </body>
 </html>
