@@ -5,32 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Criar Conta</title>
-    <link rel="icon" type="context/icon" href="resources/icon-vaccine.png">
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="icon" type="context/icon" href="resources/icon-vaccine.png" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="styles/button.css" />
+    <link rel="stylesheet" href="/styles/entrar.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <img src="resources/icon-vaccine.png" alt="vaccine icon" />
-        <span>My Health</span>
+      <nav class="nav-bar-ligher">
+        <div class="nav-bar-logo-container">
+          <img
+            src="resources/icon-vaccine.png"
+            alt="vaccine icon"
+            class="nav-icon"
+          />
+          <span class="nav-bar-logo-text">My Health</span>
+        </div>
       </nav>
     </header>
-    <form action="">
+    <div class="form-background">
+      <div class="form-link-container">
+        <form action="" class="form-signin">
+          <div class="form-fields-container">
+            <div class="labelsColumn">
+              <label for="" class="outerLabels">Email</label>
+              <label for="" class="outerLabels">Senha</label>
+            </div>
+            <div class="inputsColumn">
+              <input type="email" class="outerInputs" />
+              <input type="password" class="outerInputs" />
+            </div>
+          </div>
 
-      <label for="">Email:</label>
-
-      <input type="email" />
-      <br />
-
-      <label for="">Senha:</label>
-
-      <input type="password" />
-      <br />
-
-
-    <input type="submit" value="Entrar">
-    
-    </form>
-    <a href="/recuperar-senha.html">Esqueci minha senha</a>
+          <button class="confirm-button">Cadastrar</button>
+        </form>
+        <a href="/recuperar-senha.html">Esqueci minha senha</a>
+      </div>
+    </div>
   </body>
 </html>
