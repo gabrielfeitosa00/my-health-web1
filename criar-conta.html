@@ -26,39 +26,30 @@
     </header>
     <div class="create-account-form-container">
       <form action="/entrar.html" class="create-account-form">
-        <div>
-          <label for="">Nome completo</label>
-          <input type="text" />
-        </div>
+        <div class="create-account-form-fields-container">
+          <div class="labelsColumn">
+            <label for="" class="outerLabels">Nome completo</label>
+            <label for="" class="outerLabels">Sexo</label>
+            <label for="" class="outerLabels">Data Nascimento</label>
+            <label for="" class="outerLabels">E-mail</label>
+            <label for="" class="outerLabels">Senha</label>
+            <label for="" class="outerLabels">Repetir senha</label>
+          </div>
 
-        <!-- TODO: Remove br tags  -->
-        <div>
-          <label for="">Sexo</label>
-          <input type="radio" name="sexo" />
-          <label for="">Masculino</label>
-          <input type="radio" name="sexo" />
-          <label for="sexo">Feminino</label>
-        </div>
-
-        <div>
-          <label for="">Data Nascimento</label>
-          <input type="date" />
-        </div>
-
-        <div>
-          <label for="">E-mail</label>
-          <input type="email" />
-        </div>
-
-        <div>
-          <label for="">Senha</label>
-          <input type="password" />
-        </div>
-
-        <div>
-          <label for="">Repetir senha</label>
-
-          <input type="password" />
+          <!-- TODO: Remove br tags  -->
+          <div class="inputsColumn">
+            <input type="text" class="outerInputs" />
+            <div class="radio-container">
+              <input type="radio" name="sexo" />
+              <label for="">Masculino</label>
+              <input type="radio" name="sexo" />
+              <label for="sexo">Feminino</label>
+            </div>
+            <input type="date" class="outerInputs" />
+            <input type="email" class="outerInputs" />
+            <input type="password" class="outerInputs"/>
+            <input type="password" class="outerInputs" />
+          </div>
         </div>
 
         <button class="confirm-button">Cadastrar</button>
