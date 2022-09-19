@@ -4,7 +4,7 @@
   background-color: #add4d0;
   height: 100vh;
   align-items: center;
-width: 100%;
+  width: 100%;
 }
 
 .create-account-form {
@@ -16,30 +16,76 @@ width: 100%;
   width: 80%;
   margin-top: 6.25rem;
 }
-.create-account-form div {
+.create-account-form-fields-container {
   border: 1px green solid;
-  margin: 5px 0px;
+  width: 80%;
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-
   align-items: center;
 }
 
-.create-account-form label {
+.labelsColumn {
+  border: 1px mediumspringgreen solid;
+  margin: 5px 0px;
+  display: flex;
+  justify-content:flex-end;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.inputsColumn {
+  border: 1px magenta solid;
+  margin: 5px 0px;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start
+}
+
+.create-account-form .outerLabels {
   color: #ffffff;
   font-size: 1.3rem;
-  margin-right: 8px;
+  margin: 5px 0px;
+  border: red solid 1px;
+  height: 25px;
+
 }
 
-.create-account-form input {
+.create-account-form .outerInputs {
   color: #3f92c5;
-  border: none;
+  border: darkblue solid 1px;
   font-size: 1.3rem;
+  margin: 5px 0px;
+padding: 0;
+
+}
+.radio-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: darkblue solid 1px;
+  margin: 5px 0px;
+  height: 25px;
+
 }
 
-.create-account-form input [type="text"],
+.radio-container label {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-right: 6px;
+  height: 25px;
+}
+
+input[type="radio"] {
+  height: 1.3rem;
+  width: 1.3rem;
+  margin-right: 0.5rem;
+}
+/* .create-account-form input [type="text"],
 [type="password"],
 [type="email"],[type="text"] {
-  width:30rem;
-}
+  width:25rem;
+} */
