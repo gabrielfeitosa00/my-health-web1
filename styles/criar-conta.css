@@ -27,7 +27,7 @@
 
 .labelsColumn {
   border: 1px mediumspringgreen solid;
-  margin: 5px 0px;
+  margin-right: 8px;
   display: flex;
   justify-content:flex-end;
   flex-direction: column;
@@ -37,7 +37,7 @@
 
 .inputsColumn {
   border: 1px magenta solid;
-  margin: 5px 0px;
+
   display: flex;
   justify-content:center;
   flex-direction: column;
