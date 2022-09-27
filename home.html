@@ -1,34 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="/styles/index.css">
-</head>
-<body>
-    <header>
-        <nav>
-          <img src="resources/icon-vaccine.png" alt="vaccine icon" />
-          <span>My Health</span>
-          <button>Minhas Vacinas</button>
-          <button>Logout</button>
-        </nav>
-      </header>
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="styles/button.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
+  </head>
+  <body>
+    <header style="border: solid green 2px">
+      <nav class="nav-bar">
+        <div class="nav-bar-logo-container">
+          <img
+            src="resources/icon-vaccine.png"
+            alt="vaccine icon"
+            class="nav-icon"
+          />
+          <span class="nav-bar-logo-text">My Health</span>
+        </div>
 
-      <input type="search" value="PESQUISAR VACINA...">
-      <div>
-        <!-- Cards de vacina aqui -->
-        <div>
-            <span>NOME</span>
+        <div class="nav-bar-button-container">
+          <button class="neutral-button">Minhas Vacinas</button>
+          <button class="neutral-button">Logout</button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="background-container">
+      <div class="content-container">
+        <input type="search" placeholder="PESQUISAR VACINA..." class="search"/>
+        <div class="card-container">
+          <!-- Cards de vacina aqui -->
+          <div class="card">
+            <span class="vaccine-title">NOME</span>
             <span>dose</span>
             <span>data</span>
             <!-- imagem da vacina -->
-            <img src="/resources/icon-calendar.png" alt="">
+            <img src="/resources/image-comprovante.png" alt="" />
             <span>proxima dose de houver</span>
+          </div>
+          <div class="card">
+            <span class="vaccine-title">NOME</span>
+            <span>dose</span>
+            <span>data</span>
+            <!-- imagem da vacina -->
+            <img src="/resources/image-comprovante.png" alt="" />
+            <span>proxima dose de houver</span>
+          </div>
+          <div class="card">
+            <span class="vaccine-title">NOME</span>
+            <span>dose</span>
+            <span>data</span>
+            <!-- imagem da vacina -->
+            <img src="/resources/image-comprovante.png" alt="" />
+            <span>proxima dose de houver</span>
+          </div>
+          <div class="card">
+            <span class="vaccine-title">NOME</span>
+            <span>dose</span>
+            <span>data</span>
+            <!-- imagem da vacina -->
+            <img src="/resources/image-comprovante.png" alt="" />
+            <span>proxima dose de houver</span>
+          </div>
+
+          <div class="card">
+            <span class="vaccine-title">NOME</span>
+            <span>dose</span>
+            <span>data</span>
+            <!-- imagem da vacina -->
+            <img src="/resources/image-comprovante.png" alt="" />
+            <span>proxima dose de houver</span>
+          </div>
         </div>
+        <button class="confirm-button">Nova Vacina</button>
       </div>
-      <button>Nova Vacina</button>
-</body>
+
+    </div>
+  </body>
 </html>
