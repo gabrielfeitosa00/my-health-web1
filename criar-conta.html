@@ -1,59 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Criar Conta</title>
 
-    <link rel="stylesheet" href="/styles/index.css" />
-    <link rel="stylesheet" href="/styles/navbar.css" />
-    <link rel="stylesheet" href="styles/button.css" />
-    <link rel="stylesheet" href="styles/criar-conta.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="nav-bar-ligher">
-        <div class="nav-bar-logo-container">
-          <img
-            src="resources/icon-vaccine.png"
-            alt="vaccine icon"
-            class="nav-icon"
-          />
-          <span class="nav-bar-logo-text">My Health</span>
-        </div>
-      </nav>
-    </header>
-    <div class="create-account-form-container">
-      <form action="/entrar.html" class="create-account-form">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Criar Conta</title>
+
+  <link rel="stylesheet" href="/styles/index.css" />
+  <link rel="stylesheet" href="/styles/navbar.css" />
+  <link rel="stylesheet" href="styles/button.css" />
+  <link rel="stylesheet" href="styles/criar-conta.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar-ligher">
+      <div class="nav-bar-logo-container">
+        <img src="resources/icon-vaccine.png" alt="vaccine icon" class="nav-icon" />
+        <span class="nav-bar-logo-text">My Health</span>
+      </div>
+    </nav>
+  </header>
+  <div class="create-account-form-container">
+    <form action="/entrar.html" class="create-account-form">
         <div class="create-account-form-fields-container">
-          <div class="labelsColumn">
-            <label for="" class="outerLabels">Nome completo</label>
-            <label for="" class="outerLabels">Sexo</label>
-            <label for="" class="outerLabels">Data Nascimento</label>
-            <label for="" class="outerLabels">E-mail</label>
-            <label for="" class="outerLabels">Senha</label>
-            <label for="" class="outerLabels">Repetir senha</label>
-          </div>
+        <div class="labelsColumn">
+          <label for="" class="outerLabels">Nome completo</label>
+        </div>
 
-          <!-- TODO: Remove br tags  -->
-          <div class="inputsColumn">
-            <input type="text" class="outerInputs" />
-            <div class="radio-container">
-              <input type="radio" name="sexo" />
-              <label for="">Masculino</label>
-              <input type="radio" name="sexo" />
-              <label for="sexo">Feminino</label>
-            </div>
-            <input type="date" class="outerInputs" />
-            <input type="email" class="outerInputs" />
-            <input type="password" class="outerInputs"/>
-            <input type="password" class="outerInputs" />
+        <div class="inputsColumn">
+          <input type="text" class="outerInputs" />
+        </div>
+        </div>
+
+        <div class="create-account-form-fields-container">
+        <div class="labelsColumn">
+          <label for="" class="outerLabels">Sexo</label>
+        </div>
+        <div class="inputsColumn">
+          <div class="radio-container">
+            <input type="radio" name="sexo" />
+            <label for="">Masculino</label>
+            <input type="radio" name="sexo" />
+            <label for="sexo">Feminino</label>
           </div>
+        </div>
+        </div>
+
+        <div class="create-account-form-fields-container">
+        <div class="labelsColumn">
+          <label for="" class="outerLabels">Data Nascimento</label>
+        </div>
+        <div class="inputsColumn">
+          <input type="date" class="outerInputs" />
+        </div>
+        </div>
+
+        <div class="create-account-form-fields-container">
+        <div class="labelsColumn">
+          <label for="" class="outerLabels">E-mail</label>
+        </div>
+        <div class="inputsColumn">
+          <input type="email" class="outerInputs" />
+        </div>
+        </div>
+
+        <div class="create-account-form-fields-container">
+        <div class="labelsColumn">
+          <label for="" class="outerLabels">Senha</label>
+        </div>
+        <div class="inputsColumn">
+          <input type="password" class="outerInputs" />
+        </div>
+        </div>
+
+        <div class="create-account-form-fields-container">
+        <div class="labelsColumn">
+          <label for="" class="outerLabels">Repetir Senha</label>
+        </div>
+        <div class="inputsColumn">
+          <input type="password" class="outerInputs" />
+        </div>
         </div>
 
         <button class="confirm-button">Cadastrar</button>
-      </form>
-    </div>
-  </body>
+  </form>
+  </div>
+</body>
+
 </html>

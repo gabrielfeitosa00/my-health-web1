@@ -15,7 +15,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 55%;
 }
 
 .form-signin {
@@ -24,37 +24,46 @@
   align-items: center;
   justify-content: space-between;
   border: 1px purple solid;
-  width: 80%;
-  margin-bottom: 160px;
+  width: 100%;
 }
 
 .form-fields-container {
   border: 1px green solid;
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 6px;
 }
 
 .labelsColumn {
-  border: 1px mediumspringgreen solid;
+  /* border: 1px mediumspringgreen solid;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
   width: 100%;
-  align-items: flex-end;
+  align-items: flex-end; */
+
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 6px;
+  border: solid 1px salmon;
 }
 
 .inputsColumn {
-  border: 1px magenta solid;
+  /* border: 1px magenta solid;
   margin: 5px 0px;
   display: flex;
   justify-content: center;
   flex-direction: row;
   width: 100%;
+  align-items: flex-start; */
   align-items: flex-start;
+  width: 60%;
+  border: solid 1px blue;
 }
 .outerLabels {
   color: #ffffff;
