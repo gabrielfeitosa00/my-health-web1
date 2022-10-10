@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Editar Vacina</title>
-    <link rel="stylesheet" href="/styles/index.css">
-</head>
-<body>
-    <header>
-        <nav>
-          <img src="resources/icon-vaccine.png" alt="vaccine icon" />
-          <span>My Health</span>
-          <button>Minhas Vacinas</button>
-          <button>Logout</button>
-        </nav>
-        <div>
-            <form action="/home.html">
-                <label for="">Data de vacinação:</label>
-                <input type="date" />
-                <!-- TODO: Remove br tags  -->
-                <br />
-                <label for="">Vacina:</label>
-          
-                <input type="text" />
-                <br>
-                <label for="">Dose:</label>
-                <input type="radio"  />
-                <label for="">1a. dose</label>
-                <input type="radio"  />
-                <label for="sexo">2a. dose</label>
-                <input type="radio"  />
-                <label for="sexo">3a. dose</label>
-                <input type="radio"  />
-                <label for="sexo">Reforço</label>
-                <input type="radio"  />
-                <label for="sexo">Dose única</label>
-                <br />
-                <label for="">Comprovante de vacina:</label>
-                <input type="file" >
-                <br>
-                <label for="">Próxima vacinação:</label>
-                <input type="date" />
-
-                <br />
-                <input type="submit" value="Salvar alterações" />
-              </form>
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="styles/button.css" />
+  </head>
+  <body>
+    <header style="border: solid green 2px">
+      <nav class="nav-bar">
+        <div class="nav-bar-logo-container">
+          <img
+            src="resources/icon-vaccine.png"
+            alt="vaccine icon"
+            class="nav-icon"
+          />
+          <span class="nav-bar-logo-text">My Health</span>
         </div>
-      </header>
-</body>
+
+        <div class="nav-bar-button-container">
+          <button class="neutral-button">Minhas Vacinas</button>
+          <button class="neutral-button">Logout</button>
+        </div>
+      </nav>
+    </header>
+    <div>
+      <form action="/home.html">
+        <label for="">Data de vacinação:</label>
+        <input type="date" />
+        <!-- TODO: Remove br tags  -->
+        <br />
+        <label for="">Vacina:</label>
+
+        <input type="text" />
+        <br />
+        <label for="">Dose:</label>
+        <input type="radio" />
+        <label for="">1a. dose</label>
+        <input type="radio" />
+        <label for="sexo">2a. dose</label>
+        <input type="radio" />
+        <label for="sexo">3a. dose</label>
+        <input type="radio" />
+        <label for="sexo">Reforço</label>
+        <input type="radio" />
+        <label for="sexo">Dose única</label>
+        <br />
+        <label for="">Comprovante de vacina:</label>
+        <input type="file" />
+        <br />
+        <label for="">Próxima vacinação:</label>
+        <input type="date" />
+
+        <br />
+        <input type="submit" value="Salvar alterações" />
+      </form>
+    </div>
+  </body>
 </html>
