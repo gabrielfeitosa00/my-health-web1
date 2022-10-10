@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: column;
   background-color: #add4d0;
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
   width: 100%;
+  border: 1px greenyellow solid;
 }
 
 .create-account-form {
@@ -16,6 +17,7 @@
   width: 55%;
   margin-top: 6.25rem;
 }
+
 .create-account-form-fields-container {
   border: 1px green solid;
   width: 100%;
@@ -73,7 +75,8 @@
   padding: 0;
 
 }
-.radio-container{
+
+.radio-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -96,8 +99,31 @@ input[type="radio"] {
   width: 1.3rem;
   margin-right: 0.5rem;
 }
-/* .create-account-form input [type="text"],
+
+.create-account-form input [type="text"],
 [type="password"],
-[type="email"],[type="text"] {
-  width:25rem;
-} */
+[type="email"],
+[type="text"] {
+  width: 25rem;
+}
+
+input[type="date"] {
+  position: relative;
+  background-image: url("/resources/icon-calendar.png");
+  background-repeat: no-repeat;
+  background-size: 1.3rem 1.3rem;
+  background-position: right 5px center;
+  width: 10.5rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+}
