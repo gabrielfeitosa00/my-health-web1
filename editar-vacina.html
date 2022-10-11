@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/styles/index.css" />
     <link rel="stylesheet" href="/styles/navbar.css" />
     <link rel="stylesheet" href="styles/button.css" />
+    <link rel="stylesheet" href="styles/nova-vacina.css" />
   </head>
   <body>
     <header style="border: solid green 2px">
@@ -27,37 +28,73 @@
         </div>
       </nav>
     </header>
-    <div>
-      <button>Excluir</button>
-      <form action="/home.html">
-        <label for="">Data de vacinação:</label>
-        <input type="date" />
-        <!-- TODO: Remove br tags  -->
-        <br />
-        <label for="">Vacina:</label>
+    <div class="form-background">
+      <div class="buttonContainer">
+        <button class="cancel-button-2">Excluir</button>
+      </div>
 
-        <input type="text" />
-        <br />
-        <label for="">Dose:</label>
-        <input type="radio" />
-        <label for="">1a. dose</label>
-        <input type="radio" />
-        <label for="sexo">2a. dose</label>
-        <input type="radio" />
-        <label for="sexo">3a. dose</label>
-        <input type="radio" />
-        <label for="sexo">Reforço</label>
-        <input type="radio" />
-        <label for="sexo">Dose única</label>
-        <br />
-        <label for="">Comprovante de vacina:</label>
-        <input type="file" />
-        <br />
-        <label for="">Próxima vacinação:</label>
-        <input type="date" />
+      <form action="/home.html" class="form">
+        <div class="form-fields-container">
+          <div class="labelsColumn">
+            <label for="" class="outerLabels">Data de vacinação:</label>
+          </div>
+          <div class="inputsColumn">
+            <input type="date" class="outerInputs" required />
+          </div>
+        </div>
 
-        <br />
-        <input type="submit" value="Salvar alterações" />
+        <div class="form-fields-container">
+          <div class="labelsColumn">
+            <label for="" class="outerLabels">Vacina:</label>
+          </div>
+          <div class="inputsColumn">
+            <input type="text" class="outerInputs" />
+          </div>
+        </div>
+
+        <div class="form-fields-container">
+          <div class="labelsColumn">
+            <label for="" class="outerLabels">Dose:</label>
+          </div>
+          <div class="inputsColumn">
+            <div class="radio-container">
+              <input type="radio" />
+              <label for="">1a. dose</label>
+              <input type="radio" />
+              <label for="sexo">2a. dose</label>
+              <input type="radio" />
+              <label for="sexo">3a. dose</label>
+              <input type="radio" />
+              <label for="sexo">Reforço</label>
+              <input type="radio" />
+              <label for="sexo">Dose única</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-fields-container">
+          <div class="labelsColumn">
+            <label for="" class="outerLabels">Comprovante de vacina:</label>
+          </div>
+          <div class="inputsColumn">
+            <div class="fileGroup">
+              <label for="fileUp" class="fileLabel">Selecionar imagem...</label>
+              <input id="fileUp" type="file" accept="image/*" name="fileUp" />
+              <img src="/resources/image-comprovante.png" alt="comprovante" />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-fields-container">
+          <div class="labelsColumn">
+            <label for="" class="outerLabels">Próxima vacinação:</label>
+          </div>
+          <div class="inputsColumn">
+            <input type="date" class="outerInputs" required />
+          </div>
+        </div>
+
+        <button class="confirm-button">Salvar Alterações</button>
       </form>
     </div>
   </body>
