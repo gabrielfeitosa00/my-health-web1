@@ -1,4 +1,4 @@
-[
+const mockVaccine = [
     {
         "name":"BGG",
         "dose":"Dose única",
@@ -24,3 +24,5 @@
         "prox-data":"11/10/23"
     }
 ]
+
+export default mockVaccine
