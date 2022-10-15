@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/styles/navbar.css" />
     <link rel="stylesheet" href="styles/button.css" />
     <link rel="stylesheet" href="styles/criar-conta.css" />
+    <link rel="stylesheet" href="styles/form.css" />
   </head>
 
   <body>
@@ -26,7 +27,7 @@
       </nav>
     </header>
     <div class="create-account-form-container">
-      <form action="/entrar.html" class="create-account-form">
+      <form class="create-account-form">
         <div class="create-account-form-fields-container">
           <div class="labelsColumn">
             <label for="" class="outerLabels">Nome completo</label>
@@ -74,21 +75,28 @@
             <label for="" class="outerLabels">Senha</label>
           </div>
           <div class="inputsColumn">
-            <input type="password" class="outerInputs" />
+            <input type="password" class="outerInputs" id="pass" />
           </div>
         </div>
 
-        <div class="create-account-form-fields-container">
+        <div class="create-account-form-fields-container" id="passConfirmContainer">
           <div class="labelsColumn">
             <label for="" class="outerLabels">Repetir Senha</label>
           </div>
           <div class="inputsColumn">
-            <input type="password" class="outerInputs" />
+            <input type="password" class="outerInputs" id="passConfirm" />
           </div>
+          
         </div>
+        <div class="warningContainer">
+          <span class="warning" id="warningConfirmPass">Senha não confere!</span>
+        </div>
+       
+   
 
-        <button class="confirm-button">Cadastrar</button>
+        <button class="confirm-button" id="submitButton">Cadastrar</button>
       </form>
     </div>
   </body>
+  <script src="/js/criar-conta.js"></script>
 </html>

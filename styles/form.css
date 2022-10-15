@@ -1,0 +1,12 @@
+
+.warningContainer{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.warning{
+font-size: 0.99rem;
+color:  #FD7979;
+display: none;
+width: 60%;
+}
