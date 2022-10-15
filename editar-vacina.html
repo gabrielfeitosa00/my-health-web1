@@ -9,8 +9,21 @@
     <link rel="stylesheet" href="/styles/navbar.css" />
     <link rel="stylesheet" href="styles/button.css" />
     <link rel="stylesheet" href="styles/nova-vacina.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
   </head>
   <body>
+    <div class="modal">
+      <div class="content">
+        
+          <span class="modal-span">Tem certeza que deseja remover essa vacina?</span>
+          <div class="modal-button-container">
+            <button class="cancel-button-2 larger-button modal-button" >SIM</button>
+            <button class="neutral-button larger-button modal-button" >CANCELAR</button>
+          </div>
+        
+ 
+      </div>
+    </div>
     <header style="border: solid green 2px">
       <nav class="nav-bar" id="loged">
         <div class="nav-bar-logo-container">
@@ -27,7 +40,7 @@
     </header>
     <div class="form-background">
       <div class="buttonContainer">
-        <button class="cancel-button-2">Excluir</button>
+        <button class="cancel-button-2" id="excluir">Excluir</button>
       </div>
 
       <form action="/home.html" class="form">
@@ -96,4 +109,5 @@
     </div>
   </body>
   <script src="/js/navbar.js"></script>
+  <script src="/js/editar-vacina.js"></script>
 </html>
