@@ -25,7 +25,7 @@ const mockVaccine = [
         "name":"Febre amarela",
         "dose":"dose-1",
         "data":"2022-10-11",
-        "prox-data":"23-10-11"
+        "prox-data":"2023-10-11"
     }
 ]
 

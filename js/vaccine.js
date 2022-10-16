@@ -2,6 +2,13 @@ import mockVaccine from "./mock-data.js";
 window.addEventListener("load", () => {
   loadVaccines();
 });
+const doseDictionary = {
+    "dose-1":"1a. dose",
+    "dose-2":"2a. dose",
+    "dose-3":"3a. dose",
+    "reforco": "Reforço",
+    "dose-unica": "Dose única"
+}
 const createVaccineCard = (vaccineObj) => {
   const cardDiv = document.createElement("div");
   cardDiv.className = "card";
@@ -12,11 +19,11 @@ const createVaccineCard = (vaccineObj) => {
   cardDiv.appendChild(cardTitle);
   const cardDose = document.createElement("span");
   cardDose.className = "vaccine-dose";
-  cardDose.textContent = `${vaccineObj.dose}`;
+  cardDose.textContent = `${doseDictionary[vaccineObj.dose]}`;
   cardDiv.appendChild(cardDose);
   const cardDate = document.createElement("span");
-  cardDose.className = "vaccine-date";
-  cardDate.textContent = `${vaccineObj.data}`;
+  cardDate.className = "vaccine-date";
+  cardDate.textContent = `${new Date(vaccineObj.data).toLocaleDateString()}`;
   cardDiv.appendChild(cardDate);
   const vaccineImg = document.createElement("img");
   vaccineImg.src = "../resources/image-comprovante.png";
@@ -26,7 +33,9 @@ const createVaccineCard = (vaccineObj) => {
   cardNextContainer.className = "vaccine-next";
   const cardNextSpan = document.createElement("span");
   cardNextSpan.textContent = !!vaccineObj["prox-data"]
-    ? `Próxima dose em: ${vaccineObj["prox-data"]}`
+    ? `Próxima dose em: ${new Date(
+        vaccineObj["prox-data"]
+      ).toLocaleDateString()}`
     : "Não há próxima dose";
   cardNextContainer.appendChild(cardNextSpan);
   cardDiv.appendChild(cardNextContainer);

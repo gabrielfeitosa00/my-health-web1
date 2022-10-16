@@ -46,10 +46,10 @@
       <form action="/home.html" class="form">
         <div class="form-fields-container">
           <div class="labelsColumn">
-            <label for="" class="outerLabels">Data de vacinação:</label>
+            <label for="" class="outerLabels" >Data de vacinação:</label>
           </div>
           <div class="inputsColumn">
-            <input type="date" class="outerInputs" required />
+            <input type="date" class="outerInputs"  id="vaccine-date" required />
           </div>
         </div>
 
@@ -58,7 +58,7 @@
             <label for="" class="outerLabels">Vacina:</label>
           </div>
           <div class="inputsColumn">
-            <input type="text" class="outerInputs" />
+            <input type="text" class="outerInputs" id="vaccine-title"/>
           </div>
         </div>
 
@@ -68,16 +68,16 @@
           </div>
           <div class="inputsColumn">
             <div class="radio-container">
-              <input type="radio" />
-              <label for="">1a. dose</label>
-              <input type="radio" />
-              <label for="sexo">2a. dose</label>
-              <input type="radio" />
-              <label for="sexo">3a. dose</label>
-              <input type="radio" />
-              <label for="sexo">Reforço</label>
-              <input type="radio" />
-              <label for="sexo">Dose única</label>
+              <input type="radio" id="dose-1" />
+              <label >1a. dose</label>
+              <input type="radio" id="dose-2"/>
+              <label >2a. dose</label>
+              <input type="radio" id="dose-3"  />
+              <label >3a. dose</label>
+              <input type="radio" id="reforco"  />
+              <label >Reforço</label>
+              <input type="radio" id="dose-unica"/>
+              <label >Dose única</label>
             </div>
           </div>
         </div>
@@ -100,7 +100,7 @@
             <label for="" class="outerLabels">Próxima vacinação:</label>
           </div>
           <div class="inputsColumn">
-            <input type="date" class="outerInputs" required />
+            <input type="date" class="outerInputs" id="prox-data" required />
           </div>
         </div>
 
@@ -109,5 +109,5 @@
     </div>
   </body>
   <script src="/js/navbar.js"></script>
-  <script src="/js/editar-vacina.js"></script>
+  <script src="/js/editar-vacina.js" type="module"></script>
 </html>
