@@ -1,69 +1,63 @@
 .form-background {
-    display: flex;
-    flex-direction: column;
-    background-color: #add4d0;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  
-  }
+  display: flex;
+  flex-direction: column;
+  background-color: #add4d0;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 
-  .form-container {
-    border: solid 1px green;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 55%;
-  }
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+}
 
-  .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px purple solid;
-    width: 100%;
-  
-  }
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 
-  .form-fields-container {
-    border: 1px green solid;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 6px;
-  }
-  
-  .labelsColumn {
-    width: 40%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding-right: 6px;
-    border: solid 1px salmon;
-  }
-  
-  .inputsColumn {
-    align-items: flex-start;
-    width: 60%;
-    border: solid 1px blue;
-  }
-  .outerLabels {
-    color: #ffffff;
-    font-size: 1.3rem;
-    margin-right: 8px;
-    border: red solid 1px;
-    height: 25px;
-  }
-  
-  .outerInputs {
-    color: #3f92c5;
-    border: darkblue solid 1px;
-    font-size: 1.3rem;
-  
-    padding: 0;
-  }
+  width: 100%;
+}
+
+.form-fields-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.labelsColumn {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 6px;
+}
+
+.inputsColumn {
+  align-items: flex-start;
+  width: 60%;
+}
+.outerLabels {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-right: 8px;
+
+  height: 25px;
+}
+
+.outerInputs {
+  color: #3f92c5;
+
+  font-size: 1.3rem;
+
+  padding: 0;
+}

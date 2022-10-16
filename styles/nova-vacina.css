@@ -5,35 +5,32 @@
   min-height: 100vh;
   align-items: center;
   max-width: 100%;
-
 }
 .buttonContainer {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.buttonContainer button{
-    background-image: url("/resources/trash\ 2.png");
-    background-repeat: no-repeat;
-    background-size: 1.3rem 1.3rem;
-    background-position: left 5px center;
-    text-indent: 15px ;
+.buttonContainer button {
+  background-image: url("/resources/trash\ 2.png");
+  background-repeat: no-repeat;
+  background-size: 1.3rem 1.3rem;
+  background-position: left 5px center;
+  text-indent: 15px;
 }
-
 
 .form {
-  margin-top: 10px ;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: 1px purple solid;
+
   width: 75%;
 }
 
 .form-fields-container {
-  border: 1px green solid;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -44,53 +41,39 @@
 }
 
 .labelsColumn {
-  /* border: 1px mediumspringgreen solid;
-    margin-right: 8px;
-    display: flex;
-    justify-content:flex-end;
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-end; */
-
+  display: flex;
   width: 45%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   padding-right: 6px;
-  border: solid 1px salmon;
+
 }
 
 .inputsColumn {
-  /* border: 1px magenta solid;
-  
-    display: flex;
-    justify-content:center;
-    flex-direction: column;
-    width: 100%; */
+  display: flex;
   align-items: flex-start;
   height: auto;
   width: 55%;
-  border: solid 1px blue;
+ 
 }
-.fileGroup{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 5px 3px;
-  
+.fileGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 3px;
 }
 
 .fileGroup img {
-    max-width: 220px;
-    max-height: 220px;
-    object-fit: contain;
+  max-width: 220px;
+  max-height: 220px;
+  object-fit: contain;
 }
 .fileLabel {
   color: #ffffff;
-  font-size: 1.10rem;
+  font-size: 1.1rem;
 
   border: 1px solid #419ed7;
-  /* height: 25px; */
   padding: 5px 15px 2px 8px;
   background-color: #419ed7;
 
@@ -101,27 +84,26 @@
   color: #ffffff;
   font-size: 1.3rem;
   margin: 5px 0px;
-  border: red solid 1px;
+
   height: 25px;
 }
 .outerInputs {
   color: #3f92c5;
-  border: darkblue solid 1px;
+ 
   font-size: 1.3rem;
   margin: 5px 0px;
   padding: 0;
 }
 
 .radio-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border: darkblue solid 1px;
-    margin: 5px 0px;
-    height: 25px;
-    width: auto;
-  
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin: 5px 0px;
+  height: 25px;
+  width: auto;
+}
 
 .radio-container label {
   color: #ffffff;
@@ -143,6 +125,7 @@ input[type="date"] {
   background-size: 1.3rem 1.3rem;
   background-position: right 18px center;
   width: 11.1rem;
+  border: none;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -159,4 +142,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 input[type="file"] {
   display: none;
+}
+input[type="text"]{
+  border: none;
 }

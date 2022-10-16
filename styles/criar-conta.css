@@ -5,7 +5,7 @@
   min-height: 100vh;
   align-items: center;
   width: 100%;
-  border: 1px greenyellow solid;
+ 
 }
 
 .create-account-form {
@@ -13,13 +13,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: 1px purple solid;
+
   width: 55%;
   margin-top: 6.25rem;
 }
 
 .create-account-form-fields-container {
-  border: 1px green solid;
+ 
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -29,48 +29,33 @@
 }
 
 .labelsColumn {
-  /* border: 1px mediumspringgreen solid;
-  margin-right: 8px;
-  display: flex;
-  justify-content:flex-end;
-  flex-direction: column;
-  width: 100%;
-  align-items: flex-end; */
 
   width: 40%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   padding-right: 6px;
-  border: solid 1px salmon;
 }
 
 .inputsColumn {
-  /* border: 1px magenta solid;
 
- 
-  justify-content:center;
-  flex-direction: column;
-  width: 100%; */
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   width: 60%;
-  border: solid 1px blue;
+ 
 }
 
 .create-account-form .outerLabels {
   color: #ffffff;
   font-size: 1.3rem;
   margin: 5px 0px;
-  border: red solid 1px;
   height: 25px;
 
 }
 
 .create-account-form .outerInputs {
   color: #3f92c5;
-  border: darkblue solid 1px;
   font-size: 1.3rem;
   margin: 5px 0px;
   padding: 0;
@@ -81,7 +66,6 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  border: darkblue solid 1px;
   margin: 5px 0px;
   height: 25px;
   width: 65%;
