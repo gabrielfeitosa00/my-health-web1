@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/nova-vacina.css" />
   </head>
   <body>
-    <header style="border: solid green 2px">
+    <header>
       <nav class="nav-bar" id="loged">
         <div class="nav-bar-logo-container">
           <img
@@ -24,13 +24,13 @@
       </nav>
     </header>
     <div class="form-background">
-      <form action="/home.html" class="form">
+      <form  class="form">
         <div class="form-fields-container">
           <div class="labelsColumn">
             <label for="" class="outerLabels">Data de vacinação:</label>
           </div>
           <div class="inputsColumn">
-            <input type="date" class="outerInputs" required />
+            <input type="date" class="outerInputs"  />
           </div>
         </div>
 
@@ -81,13 +81,14 @@
             <label for="" class="outerLabels">Próxima vacinação:</label>
           </div>
           <div class="inputsColumn">
-            <input type="date" class="outerInputs" required />
+            <input type="date" class="outerInputs" />
           </div>
         </div>
 
-        <button class="confirm-button">Cadastrar</button>
+        <button class="confirm-button" id="save-button">Cadastrar</button>
       </form>
     </div>
   </body>
   <script src="/js/navbar.js"></script>
+  <script src="/js/criar-vaccina.js"></script>
 </html>

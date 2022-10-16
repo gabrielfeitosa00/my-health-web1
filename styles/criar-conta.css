@@ -113,8 +113,8 @@ input[type="date"] {
   background-image: url("/resources/icon-calendar.png");
   background-repeat: no-repeat;
   background-size: 1.3rem 1.3rem;
-  background-position: right 5px center;
-  width: 10.5rem;
+  background-position: right 18px center;
+  width: 11.1rem;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {

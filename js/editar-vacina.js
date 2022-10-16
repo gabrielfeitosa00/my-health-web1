@@ -3,7 +3,14 @@ window.addEventListener("load", () => {
   const deleteButton = document.querySelector("#excluir");
 
   const modalButtons = document.querySelectorAll(".modal-button");
+
+  const saveButton = document.querySelector("#save-button");
+
   deleteButton.addEventListener("click", openModal);
+  saveButton.addEventListener("click", (evt) => {
+    evt.preventDefault();
+    window.location.assign("/home.html");
+  });
   window.addEventListener("click", closeModalWindow);
   modalButtons.forEach((button) => {
     button.addEventListener("click", closeModal);

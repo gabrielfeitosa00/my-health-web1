@@ -1,5 +1,9 @@
 import mockVaccine from "./mock-data.js";
 window.addEventListener("load", () => {
+  const button = document.querySelector("#new-vaccine")
+  button.addEventListener("click",()=>{
+    window.location.assign("/nova-vacina.html")
+  })
   loadVaccines();
 });
 const doseDictionary = {
