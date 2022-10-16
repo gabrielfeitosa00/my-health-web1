@@ -1,7 +1,7 @@
 import mockVaccine from "./mock-data.js";
-window.onload = () => {
+window.addEventListener("load", () => {
   loadVaccines();
-};
+});
 const createVaccineCard = (vaccineObj) => {
   const cardDiv = document.createElement("div");
   cardDiv.className = "card";
@@ -30,14 +30,21 @@ const createVaccineCard = (vaccineObj) => {
     : "Não há próxima dose";
   cardNextContainer.appendChild(cardNextSpan);
   cardDiv.appendChild(cardNextContainer);
+  cardDiv.addEventListener("click", () => {
+    window.location.assign(`/editar-vacina.html?id=${vaccineObj.id}`);
+  });
   return cardDiv;
 };
 
 const loadVaccines = () => {
   const cardContainer = document.querySelector(".card-container");
-  console.log(cardContainer)
+  console.log(cardContainer);
   for (const vaccine of mockVaccine) {
     let card = createVaccineCard(vaccine);
     cardContainer.appendChild(card);
   }
 };
+
+// const redirectToEdit = (id) => {
+//   window.location.assign(`/editar-vacina.html?id=${id}`);
+// };

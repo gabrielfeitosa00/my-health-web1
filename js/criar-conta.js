@@ -1,8 +1,8 @@
-window.onload = () => {
+window.addEventListener("load", () => {
   const submitButton = document.querySelector("#submitButton");
   console.log(submitButton);
   submitButton.addEventListener("click", validarFormulario);
-};
+});
 
 const validarFormulario = (evt) => {
   evt.preventDefault();
@@ -13,13 +13,12 @@ const validarFormulario = (evt) => {
   console.log(senhaConfirm.value);
   if (!!senha.value && !!senhaConfirm.value) {
     const senhaNaoConfirmado = document.querySelector("#warningConfirmPass");
-    console.log(senhaNaoConfirmado)
+    console.log(senhaNaoConfirmado);
     if (senha.value !== senhaConfirm.value) {
       console.log("here");
 
       senhaNaoConfirmado.style.display = "block";
     } else {
- 
       senhaNaoConfirmado.style.display = "none";
     }
   }
