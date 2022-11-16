@@ -1,17 +1,15 @@
+import { createUser } from './auth.js';
 window.addEventListener("load", () => {
   const submitButton = document.querySelector("#submitButton");
-  submitButton.addEventListener("click", validarFormulario);
+  submitButton.addEventListener("click", submitCreateAccount);
 });
 
-const validarFormulario = (evt) => {
-  evt.preventDefault();
-  const senha = document.querySelector("#pass");
-  const senhaConfirm = document.querySelector("#passConfirm");
+const validarFormulario = ({senha,senhaConfirm}) => {
 
-  if (!!senha.value && !!senhaConfirm.value) {
+  if (!!senha && !!senhaConfirm) {
     const senhaNaoConfirmado = document.querySelector("#warningConfirmPass");
  
-    if (senha.value !== senhaConfirm.value) {
+    if (senha !== senhaConfirm) {
 
 
       senhaNaoConfirmado.style.display = "block";
@@ -21,3 +19,28 @@ const validarFormulario = (evt) => {
     }
   }
 };
+
+const submitCreateAccount = async (evt) =>{
+  evt.preventDefault();
+  const name = document.querySelector("#fullName").value
+  console.log(name)
+  const sex = getSexValue()
+  console.log(sex)
+  const birth = document.querySelector("#birthDate").value
+  console.log(birth)
+  const email = document.querySelector('#userMail').value
+  const senha = document.querySelector("#pass").value;
+  const senhaConfirm = document.querySelector("#passConfirm").value;
+  validarFormulario({senha,senhaConfirm})
+  await createUser(email,senha)
+}
+
+const getSexValue = ()=> {
+  const sexInputs = document.querySelectorAll('[name="sexo"]')
+  for(const sex of sexInputs){
+    if(sex.checked){
+      return sex.value
+    }
+  }
+}
+

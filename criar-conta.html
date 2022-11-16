@@ -34,7 +34,7 @@
           </div>
 
           <div class="inputsColumn">
-            <input type="text" class="outerInputs" />
+            <input type="text" class="outerInputs" id="fullName" />
           </div>
         </div>
 
@@ -44,9 +44,9 @@
           </div>
           <div class="inputsColumn">
             <div class="radio-container">
-              <input type="radio" name="sexo" />
+              <input type="radio" name="sexo"  value="masc"/>
               <label for="">Masculino</label>
-              <input type="radio" name="sexo" />
+              <input type="radio" name="sexo" value="fem"/>
               <label for="sexo">Feminino</label>
             </div>
           </div>
@@ -57,7 +57,7 @@
             <label for="" class="outerLabels">Data Nascimento</label>
           </div>
           <div class="inputsColumn">
-            <input type="date" class="outerInputs"  />
+            <input type="date" class="outerInputs" id="birthDate" />
           </div>
         </div>
 
@@ -66,7 +66,7 @@
             <label for="" class="outerLabels">E-mail</label>
           </div>
           <div class="inputsColumn">
-            <input type="email" class="outerInputs" />
+            <input type="email" class="outerInputs" id="userMail"/>
           </div>
         </div>
 
@@ -98,5 +98,5 @@
       </form>
     </div>
   </body>
-  <script src="/js/criar-conta.js"></script>
+  <script src="/js/criar-conta.js" type="module"></script>
 </html>
