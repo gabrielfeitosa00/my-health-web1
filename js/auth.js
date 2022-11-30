@@ -37,9 +37,10 @@ const createUser = async (email, pass) => {
     }
   };
   
-  const recoverPassword = async () => {
+  const recoverPassword = async (email) => {
     try {
       await sendPasswordResetEmail(auth, email);
+      window.location.assign("/index.html")
     } catch (error) {
       console.log(error.message);
     }
