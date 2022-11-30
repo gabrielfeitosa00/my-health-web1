@@ -1,5 +1,5 @@
 import { createUser } from './auth.js';
-window.addEventListener("load", () => {
+window.addEventListener("load", async () => {
   const submitButton = document.querySelector("#submitButton");
   submitButton.addEventListener("click", submitCreateAccount);
 });

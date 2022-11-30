@@ -1,3 +1,4 @@
+import { isLoged, logout } from "./auth.js";
 window.addEventListener("load", () => {
   const navbar = document.querySelector(".nav-bar, .nav-bar-ligher");
   console.log(navbar.id);
@@ -26,9 +27,10 @@ window.addEventListener("load", () => {
     const button1 = document.createElement("button");
     button1.className = "neutral-button";
     button1.textContent = "Logout";
-    button1.addEventListener("click",()=>{
-      window.location.assign("/index.html")
+    button1.addEventListener("click",async ()=>{
+      await logout()
     })
+    isLoged()
     buttonDiv.appendChild(button);
     buttonDiv.appendChild(button1);
     navbar.appendChild(buttonDiv);

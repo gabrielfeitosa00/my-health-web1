@@ -5,7 +5,7 @@ const createUser = async (email, pass) => {
       const user = await createUserWithEmailAndPassword(auth, email, pass);
       console.log(JSON.stringify(user));
     } catch (error) {
-      console.log(error.message);
+      alert(error.message);
     }
   };
   
@@ -13,15 +13,16 @@ const createUser = async (email, pass) => {
     try {
       const user = await signInWithEmailAndPassword(auth, email, pass);
       console.log(JSON.stringify(user));
+      window.location.assign("/home.html");
     } catch (error) {
-      console.log(error.message);
+      alert(error.message);
     }
   };
   const logout = async () => {
     try {
       await signOut(auth);
     } catch (error) {
-      console.log(error.message);
+      alert(error.message);
     }
   };
   
@@ -29,10 +30,10 @@ const createUser = async (email, pass) => {
     try {
       auth.onAuthStateChanged(function (user) {
         console.log(user);
-        if (!auth.currentUser) window.location.assign("/criar-conta.html");
+        if (!auth.currentUser) window.location.assign("/index.html");
       });
     } catch (error) {
-      console.log(error.message);
+      alert(error.message);
     }
   };
   
@@ -45,10 +46,10 @@ const createUser = async (email, pass) => {
   };
 
   export {
-    createUser,
-    login,
-    logout,
-    isLoged,
-    recoverPassword,
+  createUser,
+  login,
+  logout,
+  isLoged,
+  recoverPassword,
 };
 
