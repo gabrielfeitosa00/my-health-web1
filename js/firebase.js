@@ -1,10 +1,16 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
 import {
-  createUserWithEmailAndPassword, getAuth, sendPasswordResetEmail,
+  createUserWithEmailAndPassword,
+  getAuth,
+  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signOut
 } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
-import { initializeFirestore } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
+import {
+  addDoc,
+  collection,
+  getDoc, initializeFirestore, query
+} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
 import { getStorage } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-storage.js";
 
 import config from "../config/firebase-creds.js";
@@ -15,8 +21,6 @@ const db = initializeFirestore(app, { experimentalForceLongPolling: true });
 
 const storage = getStorage(app);
 
-
-
 export {
   app,
   auth,
@@ -26,5 +30,9 @@ export {
   signOut,
   db,
   storage,
+  addDoc,
+  collection,
+  getDoc,
+  query,
 };
 
