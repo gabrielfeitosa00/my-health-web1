@@ -4,28 +4,28 @@ const mockVaccine = [
         "name":"BGG",
         "dose":"dose-unica",
         "data":"2022-06-11",
-        "prox-data":null
+        "proxData":null
     },
     {
         "id":"card-2",
         "name":"Hepatite B",
         "dose":"dose-1",
         "data":"2022-08-11",
-        "prox-data":"2022-10-11"
+        "proxData":"2022-10-11"
     },
     {
         "id":"card-3",
         "name":"Rotavírus",
         "dose":"dose-1",
         "data":"2022-10-11",
-        "prox-data":"2023-10-11"
+        "proxData":"2023-10-11"
     },
     {
         "id":"card-4",
         "name":"Febre amarela",
         "dose":"dose-1",
         "data":"2022-10-11",
-        "prox-data":"2023-10-11"
+        "proxData":"2023-10-11"
     }
 ]
 

@@ -56,8 +56,8 @@ const populateInputs = (vaccine) => {
   vaccineTitle.value = vaccine.name;
   const dose = document.querySelector(`#${vaccine.dose}`);
   dose.checked = true;
-  if (!!vaccine["prox-data"]) {
-    const vaccineDateProx = document.querySelector("#prox-data");
-    vaccineDateProx.value = vaccine["prox-data"];
+  if (!!vaccine["proxData"]) {
+    const vaccineDateProx = document.querySelector("#proxData");
+    vaccineDateProx.value = vaccine["proxData"];
   }
 };

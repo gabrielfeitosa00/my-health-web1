@@ -36,9 +36,9 @@ const createVaccineCard = (vaccineObj) => {
   const cardNextContainer = document.createElement("div");
   cardNextContainer.className = "vaccine-next";
   const cardNextSpan = document.createElement("span");
-  cardNextSpan.textContent = !!vaccineObj["prox-data"]
+  cardNextSpan.textContent = !!vaccineObj["proxData"]
     ? `Próxima dose em: ${new Date(
-        vaccineObj["prox-data"]
+        vaccineObj["proxData"]
       ).toLocaleDateString()}`
     : "Não há próxima dose";
   cardNextContainer.appendChild(cardNextSpan);

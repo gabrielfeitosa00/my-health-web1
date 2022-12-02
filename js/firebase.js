@@ -9,9 +9,16 @@ import {
 import {
   addDoc,
   collection,
-  getDoc, initializeFirestore, query
+  deleteDoc,
+  getDoc,
+  initializeFirestore,
+  onSnapshot,
+  query,
+  updateDoc
 } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
-import { getStorage } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-storage.js";
+import {
+  deleteObject, getDownloadURL, getStorage, ref, uploadBytes
+} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-storage.js";
 
 import config from "../config/firebase-creds.js";
 
@@ -34,5 +41,12 @@ export {
   collection,
   getDoc,
   query,
+  updateDoc,
+  deleteDoc,
+  onSnapshot,
+  uploadBytes,
+  ref,
+  getDownloadURL,
+  deleteObject,
 };
 
