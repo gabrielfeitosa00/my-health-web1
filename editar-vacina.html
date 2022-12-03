@@ -19,10 +19,10 @@
           >Tem certeza que deseja remover essa vacina?</span
         >
         <div class="modal-button-container">
-          <button class="cancel-button-2 larger-button modal-button">
+          <button class="cancel-button-2 larger-button modal-button" id="confirmExcluir">
             SIM
           </button>
-          <button class="neutral-button larger-button modal-button">
+          <button class="neutral-button larger-button modal-button" id="cancelExcluir">
             CANCELAR
           </button>
         </div>
@@ -51,7 +51,7 @@
             <label for="" class="outerLabels">Data de vacinação:</label>
           </div>
           <div class="inputsColumn">
-            <input type="date" class="outerInputs" id="vaccine-date" />
+            <input type="date" class="outerInputs" id="date"  />
           </div>
         </div>
 
@@ -60,7 +60,7 @@
             <label for="" class="outerLabels">Vacina:</label>
           </div>
           <div class="inputsColumn">
-            <input type="text" class="outerInputs" id="vaccine-title" />
+            <input type="text" class="outerInputs" id="vaccineName" />
           </div>
         </div>
 
@@ -70,15 +70,15 @@
           </div>
           <div class="inputsColumn">
             <div class="radio-container">
-              <input type="radio" id="dose-1" />
+              <input type="radio" name="dose" id="dose-1" value="dose-1" />
               <label>1a. dose</label>
-              <input type="radio" id="dose-2" />
+              <input type="radio" name="dose" id="dose-2" value="dose-2" />
               <label>2a. dose</label>
-              <input type="radio" id="dose-3" />
+              <input type="radio" name="dose"  id="dose-3" value="dose-3" />
               <label>3a. dose</label>
-              <input type="radio" id="reforco" />
+              <input type="radio" name="dose"  id="reforco" value="reforco" />
               <label>Reforço</label>
-              <input type="radio" id="dose-unica" />
+              <input type="radio" name="dose" id="dose-unica" value="dose-unica" />
               <label>Dose única</label>
             </div>
           </div>

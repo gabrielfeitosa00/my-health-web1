@@ -69,7 +69,6 @@ const deleteVaccine = async (id) => {
     const userId = window.localStorage.getItem("userId");
     await deleteDoc(doc(db, "user", userId, "vaccine", id));
   } catch (error) {
-    alert(error.message);
     throw error;
   }
 };

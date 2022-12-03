@@ -1,4 +1,4 @@
-import { getDownloadURL, ref, storage, uploadBytes } from "./firebase.js";
+import { deleteObject, getDownloadURL, ref, storage, uploadBytes } from "./firebase.js";
 import { generateId } from "./utils.js";
 const upload = async (file) => {
   try {

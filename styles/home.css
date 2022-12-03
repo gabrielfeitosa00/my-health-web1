@@ -60,8 +60,16 @@
     background-color: white;
     align-items: center;
     padding: 20px 13px 5px;
-    height: 280px;
-    width: 320px;
+    height: 305px;
+    width: 340px;
+}
+
+.card > img {
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: contain;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .vaccine-title{

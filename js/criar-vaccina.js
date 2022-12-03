@@ -51,7 +51,7 @@ const getVaccineValues = () =>{
   const data = document.querySelector("#date").value
   const name =document.querySelector("#vaccineName").value 
   const dose = getDoseValue()
-  const proxData = document.querySelector("#proxDate").value
+  const proxData = document.querySelector("#proxData").value
 
   return {data, name, dose, proxData}
 }
