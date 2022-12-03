@@ -1,7 +1,7 @@
 import {
-    addDoc,
-    collection,
-    db, deleteDoc, doc, getDoc, onSnapshot, query, updateDoc
+  addDoc,
+  collection,
+  db, deleteDoc, doc, getDoc, onSnapshot, query, updateDoc
 } from "./firebase.js";
 import { generateId } from "./utils.js";
 const createVaccine = async ({ name, dose, data, proxData, url, filePath }) => {
@@ -75,10 +75,10 @@ const deleteVaccine = async (id) => {
 };
 
 export {
-    createVaccine,
-    getVaccineById,
-    getAllVaccines,
-    deleteVaccine,
-    updateVaccine,
+  createVaccine,
+  getVaccineById,
+  getAllVaccines,
+  deleteVaccine,
+  updateVaccine,
 };
 

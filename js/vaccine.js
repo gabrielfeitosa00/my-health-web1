@@ -1,18 +1,32 @@
-import mockVaccine from "./mock-data.js";
-window.addEventListener("load", () => {
-  const button = document.querySelector("#new-vaccine")
-  button.addEventListener("click",()=>{
-    window.location.assign("/nova-vacina.html")
-  })
-  loadVaccines();
+import { getAllVaccines } from "./crud-vacina.js";
+window.addEventListener("load", async () => {
+  const button = document.querySelector("#new-vaccine");
+  button.addEventListener("click", () => {
+    window.location.assign("/nova-vacina.html");
+  });
+  await getAllVaccines((results) => {
+    results.forEach((documento) => {
+      vaccineArray.push({
+        id: documento.id,
+        name: documento.data().name,
+        dose : documento.data().dose,
+        data: documento.data().data,
+        proxData: documento.data().proxData,
+        url: documento.data().url,
+        filePath: documento.data().filePath
+      });
+    });
+    loadVaccines(vaccineArray)
+  });
 });
+const vaccineArray = [];
 const doseDictionary = {
-    "dose-1":"1a. dose",
-    "dose-2":"2a. dose",
-    "dose-3":"3a. dose",
-    "reforco": "Reforço",
-    "dose-unica": "Dose única"
-}
+  "dose-1": "1a. dose",
+  "dose-2": "2a. dose",
+  "dose-3": "3a. dose",
+  reforco: "Reforço",
+  "dose-unica": "Dose única",
+};
 const createVaccineCard = (vaccineObj) => {
   const cardDiv = document.createElement("div");
   cardDiv.className = "card";
@@ -30,7 +44,7 @@ const createVaccineCard = (vaccineObj) => {
   cardDate.textContent = `${new Date(vaccineObj.data).toLocaleDateString()}`;
   cardDiv.appendChild(cardDate);
   const vaccineImg = document.createElement("img");
-  vaccineImg.src = "../resources/image-comprovante.png";
+  vaccineImg.src = vaccineObj.url;
   vaccineImg.alt = "vaccine image";
   cardDiv.appendChild(vaccineImg);
   const cardNextContainer = document.createElement("div");
@@ -49,10 +63,11 @@ const createVaccineCard = (vaccineObj) => {
   return cardDiv;
 };
 
-const loadVaccines = () => {
+const loadVaccines = async () => {
   const cardContainer = document.querySelector(".card-container");
-  console.log(cardContainer);
-  for (const vaccine of mockVaccine) {
+
+
+  for (const vaccine of vaccineArray) {
     let card = createVaccineCard(vaccine);
     cardContainer.appendChild(card);
   }
