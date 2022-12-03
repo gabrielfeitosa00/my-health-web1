@@ -1,25 +1,46 @@
-import { getAllVaccines } from "./crud-vacina.js";
+import { getAllVaccines, getVaccineByName } from "./crud-vacina.js";
 window.addEventListener("load", async () => {
   const button = document.querySelector("#new-vaccine");
   button.addEventListener("click", () => {
     window.location.assign("/nova-vacina.html");
   });
   await getAllVaccines((results) => {
+    vaccineArray = []
     results.forEach((documento) => {
       vaccineArray.push({
         id: documento.id,
         name: documento.data().name,
-        dose : documento.data().dose,
+        dose: documento.data().dose,
         data: documento.data().data,
         proxData: documento.data().proxData,
         url: documento.data().url,
-        filePath: documento.data().filePath
+        filePath: documento.data().filePath,
       });
     });
-    loadVaccines(vaccineArray)
+    loadVaccines(vaccineArray);
+  });
+
+  const searchInput = document.querySelector("#searchVaccine");
+  searchInput.addEventListener("keyup", () => {
+    const value = searchInput.value.trim();
+    getVaccineByName(value, (results) => {
+      vaccineArray = []
+      results.forEach((documento) => {
+        vaccineArray.push({
+          id: documento.id,
+          name: documento.data().name,
+          dose: documento.data().dose,
+          data: documento.data().data,
+          proxData: documento.data().proxData,
+          url: documento.data().url,
+          filePath: documento.data().filePath,
+        });
+      });
+      loadVaccines(vaccineArray);
+    });
   });
 });
-const vaccineArray = [];
+let vaccineArray = [];
 const doseDictionary = {
   "dose-1": "1a. dose",
   "dose-2": "2a. dose",
@@ -65,8 +86,7 @@ const createVaccineCard = (vaccineObj) => {
 
 const loadVaccines = async () => {
   const cardContainer = document.querySelector(".card-container");
-
-
+  cardContainer.innerHTML = ""
   for (const vaccine of vaccineArray) {
     let card = createVaccineCard(vaccine);
     cardContainer.appendChild(card);

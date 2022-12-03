@@ -1,7 +1,15 @@
 import {
   addDoc,
   collection,
-  db, deleteDoc, doc, getDoc, onSnapshot, query, updateDoc
+  db,
+  deleteDoc,
+  doc,
+  getDoc,
+  onSnapshot,
+  orderBy,
+  query,
+  updateDoc,
+  where
 } from "./firebase.js";
 import { generateId } from "./utils.js";
 const createVaccine = async ({ name, dose, data, proxData, url, filePath }) => {
@@ -36,7 +44,7 @@ const getVaccineById = async (id) => {
 const getAllVaccines = async (callback) => {
   try {
     const userId = window.localStorage.getItem("userId");
-    const q = query(collection(db, "user", userId, "vaccine"));
+    const q = query(collection(db, "user", userId, "vaccine"), orderBy("data"));
     onSnapshot(q, callback);
   } catch (error) {
     alert(error.message);
@@ -73,11 +81,32 @@ const deleteVaccine = async (id) => {
   }
 };
 
+const getVaccineByName = async (name, callback) => {
+  try {
+    if (!name) {
+      await getAllVaccines(callback);
+    } else {
+      const userId = window.localStorage.getItem("userId");
+      const q = query(
+        collection(db, "user", userId, "vaccine"),
+        where("name", ">=", name),
+        where("name", "<=", name + "\uf8ff"),
+        orderBy("name")
+      );
+      onSnapshot(q, callback);
+    }
+  } catch (error) {
+    alert(error.message);
+    throw error;
+  }
+};
+
 export {
   createVaccine,
   getVaccineById,
   getAllVaccines,
   deleteVaccine,
   updateVaccine,
+  getVaccineByName
 };
 
