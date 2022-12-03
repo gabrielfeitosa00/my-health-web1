@@ -1,13 +1,12 @@
 import { getDownloadURL, ref, storage, uploadBytes } from "./firebase.js";
-
+import { generateId } from "./utils.js";
 const upload = async (file) => {
   try {
-    const fileRef = "images/" + uid();
-    await uploadBytes(ref(storage, fileRef), file);
-    const url = await getDownloadURL(ref(storage, fileRef));
-    return { url, fileRef };
+    const filePath = "images/" + generateId();
+    await uploadBytes(ref(storage, filePath), file);
+    const url = await getDownloadURL(ref(storage, filePath));
+    return { url, filePath };
   } catch (error) {
-    alert(error.message);
     throw error;
   }
 };

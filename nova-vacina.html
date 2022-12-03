@@ -31,7 +31,7 @@
             <label for="" class="outerLabels">Data de vacinação:</label>
           </div>
           <div class="inputsColumn">
-            <input type="date" class="outerInputs"  />
+            <input type="date" class="outerInputs" id="date"  />
           </div>
         </div>
 
@@ -40,7 +40,7 @@
             <label for="" class="outerLabels">Vacina:</label>
           </div>
           <div class="inputsColumn">
-            <input type="text" class="outerInputs" />
+            <input type="text" class="outerInputs" id="vaccineName"/>
           </div>
         </div>
 
@@ -50,16 +50,16 @@
           </div>
           <div class="inputsColumn">
             <div class="radio-container">
-              <input type="radio" />
-              <label for="">1a. dose</label>
-              <input type="radio" />
-              <label for="sexo">2a. dose</label>
-              <input type="radio" />
-              <label for="sexo">3a. dose</label>
-              <input type="radio" />
-              <label for="sexo">Reforço</label>
-              <input type="radio" />
-              <label for="sexo">Dose única</label>
+              <input type="radio" name="dose" value="dose-1" />
+              <label for="dose">1a. dose</label>
+              <input type="radio" name="dose" value="dose-2"  />
+              <label for="dose">2a. dose</label>
+              <input type="radio" name="dose" value="dose-3"  />
+              <label for="dose">3a. dose</label>
+              <input type="radio" name="dose" value="reforco" />
+              <label for="dose">Reforço</label>
+              <input type="radio" name="dose" value="dose-unica" />
+              <label for="dose">Dose única</label>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@
             <div class="fileGroup">
               <label for="fileUp" class="fileLabel">Selecionar imagem...</label>
               <input id="fileUp" type="file" accept="image/*" name="fileUp" />
-              <img src="/resources/image-comprovante.png" alt="comprovante" />
+              <img src="" alt="comprovante" id="comprovante"  />
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@
             <label for="" class="outerLabels">Próxima vacinação:</label>
           </div>
           <div class="inputsColumn">
-            <input type="date" class="outerInputs" />
+            <input type="date" class="outerInputs" id="proxDate" />
           </div>
         </div>
 
@@ -91,5 +91,5 @@
     </div>
   </body>
   <script src="/js/navbar.js" type="module"></script>
-  <script src="/js/criar-vaccina.js"></script>
+  <script src="/js/criar-vaccina.js" type="module"></script>
 </html>

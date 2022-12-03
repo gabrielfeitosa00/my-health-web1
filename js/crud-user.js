@@ -1,8 +1,8 @@
-import { addDoc, collection, db, getDoc, query } from "./firebase.js";
+import { collection, db, doc, getDoc, query, setDoc } from "./firebase.js";
 
 const createUserDB = async ({ name, sex, birthday, email, id }) => {
   try {
-    await addDoc(collection(db, "user"), {
+    await setDoc(doc(db, "user", id ), {
       id,
       name,
       sex,

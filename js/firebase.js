@@ -9,12 +9,10 @@ import {
 import {
   addDoc,
   collection,
-  deleteDoc,
-  getDoc,
+  deleteDoc, doc, getDoc,
   initializeFirestore,
   onSnapshot,
-  query,
-  updateDoc
+  query, setDoc, updateDoc
 } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
 import {
   deleteObject, getDownloadURL, getStorage, ref, uploadBytes
@@ -48,5 +46,7 @@ export {
   ref,
   getDownloadURL,
   deleteObject,
+  doc,
+  setDoc
 };
 
